@@ -1,0 +1,27 @@
+# Description: X Toolkit library
+# URL: http://www.paldo.org/index-section-packages-page-main-releaseid-4322.html
+# Maintainer:
+
+
+NAME=libXt
+VERSION=1.1.4
+
+
+DEPENDS=""
+SOURCES="http://www.paldo.org/paldo/sources/xt/libXt-1.1.4.tar.bz2"
+
+
+pkgmain() {
+mkdir ${PKG}/lib64
+ln -s lib64 ${PKG}/lib
+mkdir ${PKG}/usr
+mkdir ${PKG}/usr/lib64
+ln -s lib64 ${PKG}/usr/lib
+	cd ${NAME}-${VERSION}
+	./configure  		\
+		--prefix=/usr --disable-static 
+
+	make -j${NR_JOBS}
+	make DESTDIR=${PKG} install
+
+}

@@ -1,0 +1,12 @@
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x usr/
+drwxr-xr-x usr/include/
+-rw-r--r-- usr/include/mpc.h
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/
+-rw-r--r-- usr/lib64/libmpc.a
+lrwxrwxrwx usr/lib64/libmpc.so
+lrwxrwxrwx usr/lib64/libmpc.so.3
+-rwxr-xr-x usr/lib64/libmpc.so.3.0.0
+drwxr-xr-x usr/share/

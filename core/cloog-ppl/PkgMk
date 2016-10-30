@@ -1,0 +1,30 @@
+# Description: Library to generate code for scanning Z-polyhedra
+# URL: http://www.cloog.org/
+# Maintainer: Remi Pommarel, repk at triplefau dot lt
+
+
+NAME=cloog-ppl
+VERSION=0.15.11
+
+
+DEPENDS="gmp mpfr"
+SOURCES="ftp://gcc.gnu.org/pub/gcc/infrastructure/${NAME}-${VERSION}.tar.gz"
+
+
+pkgmain() {
+mkdir ${PKG}/lib64
+ln -s lib64 ${PKG}/lib
+mkdir ${PKG}/usr
+mkdir ${PKG}/usr/lib64
+ln -s lib64 ${PKG}/usr/lib
+	cd ${NAME}-${VERSION}
+
+	patch_unknown_target autoconf/config.sub
+
+	./configure  		\
+		--prefix=/usr --enable-shared				\
+		--with-gmp=${CLFS_DIR}/usr --with-ppl=${CLFS_DIR}/usr
+
+	make -j${NR_JOBS}
+	make DESTDIR=${PKG} install
+}

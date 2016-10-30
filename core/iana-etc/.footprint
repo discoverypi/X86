@@ -1,0 +1,8 @@
+drwxr-xr-x etc/
+-rw-r--r-- etc/protocols
+-rw-r--r-- etc/services
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x usr/
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/

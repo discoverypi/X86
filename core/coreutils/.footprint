@@ -1,0 +1,9 @@
+drwxr-xr-x bin/
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x usr/
+drwxr-xr-x usr/bin/
+lrwxrwxrwx usr/bin/install
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/
+drwxr-xr-x usr/sbin/

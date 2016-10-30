@@ -1,0 +1,12 @@
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x usr/
+drwxr-xr-x usr/include/
+-rw-r--r-- usr/include/mpf2mpfr.h
+-rw-r--r-- usr/include/mpfr.h
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/
+lrwxrwxrwx usr/lib64/libmpfr.so
+lrwxrwxrwx usr/lib64/libmpfr.so.4
+-rwxr-xr-x usr/lib64/libmpfr.so.4.1.2
+drwxr-xr-x usr/share/

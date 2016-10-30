@@ -1,0 +1,6 @@
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x usr/
+-rwxr-xr-x usr/bin
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/

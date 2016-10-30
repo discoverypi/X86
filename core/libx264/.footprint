@@ -1,0 +1,15 @@
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x usr/
+drwxr-xr-x usr/bin/
+-rwxr-xr-x usr/bin/x264
+drwxr-xr-x usr/include/
+-rw-r--r-- usr/include/x264.h
+-rw-r--r-- usr/include/x264_config.h
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/
+-rw-r--r-- usr/lib64/libx264.a
+lrwxrwxrwx usr/lib64/libx264.so
+-rwxr-xr-x usr/lib64/libx264.so.148
+drwxr-xr-x usr/lib64/pkgconfig/
+-rw-r--r-- usr/lib64/pkgconfig/x264.pc

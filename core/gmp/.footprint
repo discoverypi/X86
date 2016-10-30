@@ -1,0 +1,17 @@
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x usr/
+drwxr-xr-x usr/include/
+-rw-r--r-- usr/include/gmp.h
+-rw-r--r-- usr/include/gmpxx.h
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/
+-rw-r--r-- usr/lib64/libgmp.a
+lrwxrwxrwx usr/lib64/libgmp.so
+lrwxrwxrwx usr/lib64/libgmp.so.10
+-rwxr-xr-x usr/lib64/libgmp.so.10.2.0
+-rw-r--r-- usr/lib64/libgmpxx.a
+lrwxrwxrwx usr/lib64/libgmpxx.so
+lrwxrwxrwx usr/lib64/libgmpxx.so.4
+-rwxr-xr-x usr/lib64/libgmpxx.so.4.4.0
+drwxr-xr-x usr/share/

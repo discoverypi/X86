@@ -1,0 +1,16 @@
+lrwxrwxrwx lib
+drwxr-xr-x lib64/
+drwxr-xr-x sbin/
+-rwxr-xr-x sbin/mount.cifs
+drwxr-xr-x usr/
+drwxr-xr-x usr/bin/
+drwxr-xr-x usr/include/
+-rw-r--r-- usr/include/cifsidmap.h
+lrwxrwxrwx usr/lib
+drwxr-xr-x usr/lib64/
+drwxr-xr-x usr/sbin/
+drwxr-xr-x usr/share/
+drwxr-xr-x usr/share/man/
+drwxr-xr-x usr/share/man/man1/
+drwxr-xr-x usr/share/man/man8/
+-rw-r--r-- usr/share/man/man8/mount.cifs.8

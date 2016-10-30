@@ -1,0 +1,28 @@
+# Description: helper tool used when compiling libraries
+# URL: http://www.freedesktop.org/wiki/Software/pkg-config/
+# Maintainer: Remi Pommarel, repk at triplefau dot lt
+
+
+NAME=pkg-config
+VERSION=0.28
+
+
+DEPENDS=""
+SOURCES="http://pkgconfig.freedesktop.org/releases/${NAME}-${VERSION}.tar.gz"
+PATCHES="pkg-config-sysroot.patch"
+
+pkgmain() {
+mkdir ${PKG}/lib64
+ln -s lib64 ${PKG}/lib
+mkdir ${PKG}/usr
+mkdir ${PKG}/usr/lib64
+ln -s lib64 ${PKG}/usr/lib
+	cd ${NAME}-${VERSION}
+
+    #process_patches
+
+	./configure --prefix=/usr --with-internal-glib --disable-host-tool \
+
+	make -j${NR_JOBS}
+	make DESTDIR=${PKG} install
+}
